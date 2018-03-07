@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 17.375" name="DataAccess">
+  <DataContextMoniker Name="/DataAccessDataContext" />
+  <nestedChildShapes>
+    <classShape Id="bcd63623-0e89-4022-ae40-509762b5b208" absoluteBounds="0.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataAccessDataContext/MBProto_sessionTbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="53d9e951-50e4-46fb-bdb4-1b8c83d53730" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c63bfc23-e403-4a0b-9222-f6cc078ae4ea" absoluteBounds="3.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataAccessDataContext/MBProto_user_sessionTbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1db3e841-b963-447c-8e44-86d18e4ffcd4" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6980f91-faf9-4f11-ad5f-8afbf3c2c4f4" absoluteBounds="1, 7.875, 2, 3.5016097005208318">
+      <DataClassMoniker Name="/DataAccessDataContext/CustomerTbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3ed5722f-3b44-4835-9b40-8b5cb6591dba" absoluteBounds="1.0150000000000001, 8.335, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e8fcd631-b6e3-4d5c-9fee-f54dd1fa7ab1" absoluteBounds="1, 12.875, 2, 4.2708154296875005">
+      <DataClassMoniker Name="/DataAccessDataContext/UserTbl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fdc506a8-169a-4a55-aea6-36e0878db780" absoluteBounds="1.0150000000000001, 13.335, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.875 : 7.875); (1.875 : 2.90549967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataAccessDataContext/CustomerTbl/CustomerTbl_MBProto_sessionTbl" />
+      <nodes>
+        <classShapeMoniker Id="a6980f91-faf9-4f11-ad5f-8afbf3c2c4f4" />
+        <classShapeMoniker Id="bcd63623-0e89-4022-ae40-509762b5b208" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3 : 15.0104077148438); (4.75 : 15.0104077148438); (4.75 : 2.90549967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataAccessDataContext/UserTbl/UserTbl_MBProto_user_sessionTbl" />
+      <nodes>
+        <classShapeMoniker Id="e8fcd631-b6e3-4d5c-9fee-f54dd1fa7ab1" />
+        <classShapeMoniker Id="c63bfc23-e403-4a0b-9222-f6cc078ae4ea" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
